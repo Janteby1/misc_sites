@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <title>Emily Shrem - 20th Birthday</title>
+</head>
+<link href="style.css" rel="stylesheet">
+
+<body>
+  <br><br><br>
+  <h2> Happy Birthday Emily!</h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "emily") {
+alert('Correct! Load Page.');
+window.open('landing.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Continue to Protected Website" onClick="passWord()">
+</FORM>
+</CENTER>
+</body>
